@@ -83,8 +83,11 @@ function calculateTip(x, y) {
  * then display the dollar amount they should tip
  */
 var billTotal = Number(prompt ("What is the bill total?"))
-    console.log("The user entered " + userInput)
+
 var precentageTip = Number(prompt("How much do you want to tip?"))
+
+alert("Tip this amount: " + calculateTip(billTotal, precentageTip) + " in USD. ");
+
 /**
  * TODO:
  * Create a function named `applyDiscount`. This function should accept a price
@@ -99,3 +102,9 @@ var precentageTip = Number(prompt("How much do you want to tip?"))
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
+function applyDiscount(x, y,) {
+    return (x * y) - x
+    var originalPrice = number
+    var discountPercent = decimal
+    applyDiscount(originalPrice, discountPercent,);
+}
