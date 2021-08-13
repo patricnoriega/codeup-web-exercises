@@ -9,10 +9,10 @@
  * > sayHello("codeup") // returns "Hello, codeup!"
  */
     function sayHello(name) {
-       return "Hello " + name;
+       return "Hello, " + name;
 
 }
-console.log(sayHello());
+console.log(sayHello("codeup!"));
 /**
  * TODO:
  * Call the function 'sayHello' and pass your name as a string literal argument.
@@ -21,9 +21,9 @@ console.log(sayHello());
  * console.log 'helloMessage' to check your work
  */
 
-var helloMessage = sayHello();
+var helloMessage = sayHello("Pat");
 
-console.log(helloMessage)
+console.log(helloMessage);
 
 /**
  * TODO:
@@ -59,7 +59,8 @@ var random = Math.floor((Math.random() * 3) + 1);
  * number)
  */
 function isTwo(number) {
-  return number === 2
+  console.log("Our number is: " + number);
+    return number === 2;
 }
 console.log(isTwo(random));
 /**
@@ -76,6 +77,9 @@ console.log(isTwo(random));
 function calculateTip(x, y) {
     return x * y;
 }
+console.log(calculateTip(0.20, 20));
+console.log(calculateTip(0.25, 25.50));
+console.log(calculateTip(0.15, 33.42));
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
@@ -84,9 +88,11 @@ function calculateTip(x, y) {
  */
 var billTotal = Number(prompt ("What is the bill total?"))
 
-var precentageTip = Number(prompt("How much do you want to tip?"))
+var percentageTip = Number(prompt("How much do you want to tip in a whole number?"));
 
-alert("Tip this amount: " + calculateTip(billTotal, precentageTip) + " in USD. ");
+billTotal = percentageTip / 100;
+
+alert("Tip this amount: $" + calculateTip(billTotal, percentageTip) + " in USD. ");
 
 /**
  * TODO:
@@ -97,14 +103,11 @@ alert("Tip this amount: " + calculateTip(billTotal, precentageTip) + " in USD. "
  *
  * Example:
  * > var originalPrice = 100;
- * > var dicountPercent = .2; // 20%
+ * > var discountPercent = .2; // 20%
  * > applyDiscount(originalPrice, dicountPercent) // 80
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
-function applyDiscount(x, y,) {
-    return (x * y) - x
-    var originalPrice = number
-    var discountPercent = decimal
-    applyDiscount(originalPrice, discountPercent,);
+function applyDiscount(originalPrice, discountPercent) {
+    return originalPrice - (originalPrice * discountPercent);
 }
