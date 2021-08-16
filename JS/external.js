@@ -42,3 +42,4 @@ var productOffer = prompt("Are you a member? ")
 console.log('The user entered: ' + userInput);
 
 alert(" Please, take a coupon. ");
+2
