@@ -122,16 +122,23 @@ var luckyNumber = Math.floor(Math.random() * 5);
 function calculateTotal(luckyNumber, shoppingCart) {
   if (luckyNumber === 5) {
       console.log("Your total is zero.")
+      return 0
   }else if (luckyNumber === 4) {
+
       console.log("Your total is $" + (0.5 * shoppingCart))
+      return 0.5 * shoppingCart
   }else if (luckyNumber === 3) {
       console.log("Your total is $" + (0.65 * shoppingCart))
+      return 0.65 * shoppingCart
   }else if (luckyNumber === 2) {
       console.log("Your total is $" + (0.75 * shoppingCart))
+      return 0.75 * shoppingCart
   }else if (luckyNumber === 1) {
       console.log("Your total is $" + (0.9 * shoppingCart))
+      return 0.9 * shoppingCart
   }else {
       console.log("Your total is $" + shoppingCart)
+      return shoppingCart
   }
 }
 calculateTotal(luckyNumber, 75)
@@ -146,10 +153,10 @@ calculateTotal(luckyNumber, 100)
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-    var luckyNumber = Math.floor(Math.random() * 6);
+    luckyNumber = Math.floor(Math.random() * 6);
     var shoppingCart = Number(prompt("what is the total amount of your bill?"))
     var billTotal = calculateTotal(luckyNumber,shoppingCart)
-    alert("Your lucky number was: " + luckyNumber + "\nYour price before the discount was: " + shoppingCart + "\n" + billTotal)
+    alert("Your lucky number was: " + luckyNumber + "\nYour price before the discount was: " + shoppingCart + "\n" + billTotal);
 
 
 /**
@@ -168,6 +175,26 @@ calculateTotal(luckyNumber, 100)
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
-// var userInput = Number
-// confirm("Would you like to pick a number");
-// prompt("Please give me a number");
+
+var userInput = Number
+var userTotal = userInput += 100
+var userPositive = "positive"
+var userNegative = "negative"
+confirm("Would you like to pick a number");
+prompt("Please give me a number");
+function pickNumber(userInput) {
+    if (userInput == 0){
+        alert("This number is even");
+    }else if (userInput == 2) {
+        alert("This number is odd");
+    }else if (userInput + 100) {
+        alert(userInput + "100" + userTotal);
+    }else if (userInput === userPositive) {
+        alert("This is a positive number");
+    }else if (userInput === userNegative) {
+        alert("This is a negative number");
+    }else (isNaN(userInput)); {
+        alert("This is NOT a Number")
+    }
+}
+pickNumber()
