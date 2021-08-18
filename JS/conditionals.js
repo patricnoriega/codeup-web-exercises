@@ -183,18 +183,18 @@ var userNegative = "negative"
 confirm("Would you like to pick a number");
 prompt("Please give me a number");
 function pickNumber(userInput) {
-    if (userInput == 0){
+    if (userInput % 2 == 0){
         alert("This number is even");
-    }else if (userInput == 2) {
+    }else if (userInput ) {
         alert("This number is odd");
     }else if (userInput + 100) {
         alert(userInput + "100" + userTotal);
-    }else if (userInput === userPositive) {
+    }else if (userInput % 2 !== 0)  {
         alert("This is a positive number");
-    }else if (userInput === userNegative) {
+    }else if (userInput % 2 == 0) {
         alert("This is a negative number");
     }else (isNaN(userInput)); {
         alert("This is NOT a Number")
     }
 }
-pickNumber()
+pickNumber();
