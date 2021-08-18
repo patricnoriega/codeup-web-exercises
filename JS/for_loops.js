@@ -1,19 +1,19 @@
 console.log("Hellooooo, is anyone out there...");
-
+// #2
 // var num = parseInt(prompt("Enter a number"))
 // function showMultiplicationTable(num) {
-//     for (i = 1; i <= 10 ; i++) {
+//     for (i = 1; i <= 10 ; i = i * 2) {
 //
 //         console.log(i + " * " + i + " = "  + i * num);
 //     }
 // }
 //
 // showMultiplicationTable(num );
-
-// for (var incrementer = 1; incrementer <= 10; incrementer++) {
-//     console.log("This loop has run " + incrementer + " time(s).");
-// }
-
+//
+// // for (var incrementer = 1; incrementer <= 10; incrementer++) {
+// //     console.log("This loop has run " + incrementer + " time(s).");
+// // }
+// // #3
 // var randomNumbers = Math.floor(Math.random() * 200) + 20;
 // for (var randomNumbers = 20; randomNumbers <= 200; randomNumbers++) {
 //     if (randomNumbers === 0) {
@@ -25,7 +25,8 @@ console.log("Hellooooo, is anyone out there...");
 //     }
 // }
 // console.log(randomNumbers);
-
+//
+// #4
 // var a, b;
 // var height = 9;
 // var string = "";
@@ -36,7 +37,9 @@ console.log("Hellooooo, is anyone out there...");
 //     string += "\n";
 // }
 // console.log(string);
-
+//
+//
+// // #5
 // for (var i = 100; i >= 5; i-= 5) {
-//     console.log([i]);
+//     console.log(i);
 //     }
