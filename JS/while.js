@@ -11,6 +11,5 @@ console.log("Just nod if you can hear me");
 // do {
 //    allCones = confirm("I have to sell: " + allCones + " cones before I can go home.")
 //     var conesSold = Math.floor(Math.random() * 5) + 1;
-//
 //    conesSold = confirm("I sold: " + conesSold + " cone(s) to each customer so far today.")
 // }while (conesSold < allCones);

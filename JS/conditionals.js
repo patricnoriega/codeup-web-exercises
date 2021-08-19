@@ -19,21 +19,26 @@
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
-function analyzeColor (userColor) {
-    // var userColor = prompt("Pick a color. ")
-    if (userColor === "blue") {
-        console.log("Blue is the color of the sky");
-    }else if (userColor === "red") {
-        console.log("strawberries are red");
-    }else if (userColor === "cyan") {
-        console.log("Cyan is acting sus...")
-    }else {
-        console.log("Uh oh I dont know anything about your color");
 
-    }
-
-}
-
+// function analyzeColor (userColor) {
+//     var userColor = prompt("Pick a color. ")
+//     var message;
+//     if (userColor === "blue") {
+//         message = ("Blue is the color of the sky");
+//     }else if (userColor === "red") {
+//         message = ("strawberries are red");
+//     }else if (userColor === "cyan") {
+//         message = ("Cyan is acting sus...")
+//     }else {
+//         message = ("Uh oh I dont know anything about your color");
+//
+//     }
+// return message;
+// }
+// console.log(analyzeColor("blue"));
+// console.log(analyzeColor("red"));
+// console.log(analyzeColor("cyan"));
+// console.log(analyzeColor("green"));
 
 
 // Don't change the next two lines!
@@ -41,16 +46,16 @@ function analyzeColor (userColor) {
 // - `colors`: a list of the colors of the rainbow
 // - `randomColor`: contains a single random color value from the list (this
 //                  will contain a different color every time the page loads)
-var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
-var randomColor = colors[Math.floor(Math.random() * colors.length)];
+// var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+// var randomColor = colors[Math.floor(Math.random() * colors.length)];
 /**
  * TODO:
  * Pass the `randomColor` variable to your function and console.log the results.
  * You should see a different message every time you refresh the page
  */
-
-
-console.log(analyzeColor(randomColor))
+//
+//
+// console.log(analyzeColor(randomColor));
 
 
 
@@ -59,22 +64,24 @@ console.log(analyzeColor(randomColor))
  * TODO:
  * Refactor your above function to use a switch-case statement
  */
-// var colorPick = prompt("Please enter a color.")
-//         switch(colorPick) {
-//             case "blue":
-//                 console.log("blue is the color of the sky");
-//                 break;
-//             case "red":
-//                 console.log("strawberries are red")
-//                 break;
-//             case "cyan":
-//                 console.log("cyan is acting sus...")
-//                 break;
-//             default:
-//                 console.log("I don't know anything about your color")
-//                 break;
-//         }
-
+        // function analyzeColor(userColor) {
+        // var message;
+        // switch(userColor) {
+        //     case "blue":
+        //         message = ("blue is the color of the sky");
+        //         break;
+        //     case "red":
+        //         message = ("strawberries are red");
+        //         break;
+        //     case "cyan":
+        //         message = ("cyan is acting sus...");
+        //         break;
+        //     default:
+        //         message = ("I don't know anything about your color");
+        //         break;
+        // }
+        //         return message;
+        // }
 
 /**
  * TODO:
@@ -84,21 +91,22 @@ console.log(analyzeColor(randomColor))
  *
 
 /* ########################################################################## */
-var colorPick = prompt("Please enter a color.")
-switch(colorPick) {
-    case "blue":
-        alert("blue is the color of the sky");
-        break;
-    case "red":
-        alert("strawberries are red")
-        break;
-    case "cyan":
-        alert("cyan is acting sus...")
-        break;
-    default:
-        alert("I don't know anything about your color")
-        break;
-}
+// var colorPick = prompt("Please enter a color.")
+// switch(colorPick) {
+//     case "blue":
+//         alert("blue is the color of the sky");
+//         break;
+//     case "red":
+//         alert("strawberries are red")
+//         break;
+//     case "cyan":
+//         alert("cyan is acting sus...")
+//         break;
+//     default:
+//         alert("I don't know anything about your color")
+//         break;
+// }
+
 /**
  * TODO:
  * Suppose there's a promotion in Walmart, each customer is given a randomly
@@ -118,31 +126,30 @@ switch(colorPick) {
  * Test your function by passing it various values and checking for the expected
  * return value.
  */
-var luckyNumber = Math.floor(Math.random() * 5);
-function calculateTotal(luckyNumber, shoppingCart) {
-  if (luckyNumber === 5) {
-      console.log("Your total is zero.")
-      return 0
-  }else if (luckyNumber === 4) {
-
-      console.log("Your total is $" + (0.5 * shoppingCart))
-      return 0.5 * shoppingCart
-  }else if (luckyNumber === 3) {
-      console.log("Your total is $" + (0.65 * shoppingCart))
-      return 0.65 * shoppingCart
-  }else if (luckyNumber === 2) {
-      console.log("Your total is $" + (0.75 * shoppingCart))
-      return 0.75 * shoppingCart
-  }else if (luckyNumber === 1) {
-      console.log("Your total is $" + (0.9 * shoppingCart))
-      return 0.9 * shoppingCart
-  }else {
-      console.log("Your total is $" + shoppingCart)
-      return shoppingCart
-  }
-}
-calculateTotal(luckyNumber, 75)
-calculateTotal(luckyNumber, 100)
+// var luckyNumber = Math.floor(Math.random() * 5);
+// function calculateTotal(luckyNumber, shoppingCart) {
+//   if (luckyNumber === 5) {
+//       console.log("Your total is zero.")
+//       return 0
+//   }else if (luckyNumber === 4) {
+//       console.log("Your total is $" + (0.5 * shoppingCart))
+//       return 0.5 * shoppingCart
+//   }else if (luckyNumber === 3) {
+//       console.log("Your total is $" + (0.65 * shoppingCart))
+//       return 0.65 * shoppingCart
+//   }else if (luckyNumber === 2) {
+//       console.log("Your total is $" + (0.75 * shoppingCart))
+//       return 0.75 * shoppingCart
+//   }else if (luckyNumber === 1) {
+//       console.log("Your total is $" + (0.9 * shoppingCart))
+//       return 0.9 * shoppingCart
+//   }else {
+//       console.log("Your total is $" + shoppingCart)
+//       return shoppingCart
+//   }
+// }
+// calculateTotal(luckyNumber, 75)
+// calculateTotal(luckyNumber, 100)
 
 
 /**
@@ -153,10 +160,10 @@ calculateTotal(luckyNumber, 100)
  * price before the discount was, and what their price after the discount is.
  */
 // Generate a random number between 0 and 6
-    luckyNumber = Math.floor(Math.random() * 6);
-    var shoppingCart = Number(prompt("what is the total amount of your bill?"))
-    var billTotal = calculateTotal(luckyNumber,shoppingCart)
-    alert("Your lucky number was: " + luckyNumber + "\nYour price before the discount was: " + shoppingCart + "\n" + billTotal);
+//     luckyNumber = Math.floor(Math.random() * 6);
+//     var shoppingCart = Number(prompt("what is the total amount of your bill?"))
+//     var billTotal = calculateTotal(luckyNumber,shoppingCart)
+//     alert("Your lucky number was: " + luckyNumber + "\nYour price before the discount was: $" + shoppingCart + "\nYour total after the discount is $" + billTotal);
 
 
 /**
@@ -175,26 +182,93 @@ calculateTotal(luckyNumber, 100)
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+//
+// var userInput = Number
+// var userTotal = userInput += 100
+// var userPositive = "positive"
+// var userNegative = "negative"
+// confirm("Would you like to pick a number");
+// prompt("Please give me a number");
+// function pickNumber(userInput) {
+//     if (userInput % 2 == 0){
+//         alert("This number is even");
+//     }else if (userInput ) {
+//         alert("This number is odd");
+//     }else if (userInput + 100) {
+//         alert(userInput + "100" + userTotal);
+//     }else if (userInput % 2 !== 0)  {
+//         alert("This is a positive number");
+//     }else if (userInput % 2 == 0) {
+//         alert("This is a negative number");
+//     }else (isNaN(userInput)); {
+//         alert("This is NOT a Number")
+//     }
+// }
+// pickNumber();
 
-var userInput = Number
-var userTotal = userInput += 100
-var userPositive = "positive"
-var userNegative = "negative"
-confirm("Would you like to pick a number");
-prompt("Please give me a number");
-function pickNumber(userInput) {
-    if (userInput % 2 == 0){
-        alert("This number is even");
-    }else if (userInput ) {
-        alert("This number is odd");
-    }else if (userInput + 100) {
-        alert(userInput + "100" + userTotal);
-    }else if (userInput % 2 !== 0)  {
-        alert("This is a positive number");
-    }else if (userInput % 2 == 0) {
-        alert("This is a negative number");
-    }else (isNaN(userInput)); {
-        alert("This is NOT a Number")
-    }
-}
-pickNumber();
+//Shanshan-
+// var isEnter = confirm("would you like to enter a number");
+//
+// if (isEnter === true) {
+//     var userNumber = prompt("pleas enter a number");
+//
+//     if (isNaN(userNumber) === true) {
+//         alert("Hey! That is NOT a number")
+//     }
+//     if (userNumber % 2 === 0){
+//         alert("This is an even number");
+//     } else {
+//         alert("this is an odd number");
+//     }
+//     userNumber = parseInt(userNumber);
+//     var plusHundred = userNumber + 100;
+//     alert(userNumber + " plus 100 is " + plusHundred);
+//
+//         if (userNumber > 0){
+//             alert(userNumber + " is positive");
+//         }else if (userNumber < 0) {
+//             alert(userNumber + " is negative");
+//         }else {
+//             alert("This is neither a positive or negative number");
+//         }
+// }
+//
+// function  isEven(number) {
+//     if (number % 2 === 0) {
+//     return true;
+//     }else {
+//     return false;
+//     }
+// }
+//
+// function isPositive(number) {
+//     if (number > 0){
+//         return true;
+//     }else  if (number < 0) {
+//         return false;
+//     }else {
+//         return "not positive nor negative";
+//     }
+// }
+//
+// function isString(number) {
+//     if (isNaN(number) === true) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+//
+//
+//     if (isEnter) {
+//         if (isString(userNumber)) {
+//             alert("Hey! That is NOT a number");
+//         } else {
+//             userNumber = Number(userNumber);
+//             if (isEven(userNumber)) {
+//                 alert(userNumber + "is even");
+//             } else {
+//                 alert(userNumber + "is odd");
+//             }
+//         }
+//     }
