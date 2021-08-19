@@ -183,18 +183,18 @@ console.log("Is anyone out there...");
 
 // we can also use continue to allow a loop to skip an iteration.
 
-function allOddNumbersToX (x) {
-    for (var i = 0; i <= x; i++) {
-        if (i % 2 === 0) {
-            continue;
-        }
-        console.log(i);
-    }
-    return x;
-}
-
-allOddNumbersToX(17);
-allOddNumbersToX(18);
+// function allOddNumbersToX (x) {
+//     for (var i = 0; i <= x; i++) {
+//         if (i % 2 === 0) {
+//             continue;
+//         }
+//         console.log(i);
+//     }
+//     return x;
+// }
+//
+// allOddNumbersToX(17);
+// allOddNumbersToX(18);
 
 
 // The above function will only log the odd numbers until the argument passed.

@@ -1,5 +1,5 @@
 console.log("Hellooooo, is anyone out there...");
-// // #2
+// #2
 // var num = parseInt(prompt("Enter a number"))
 //
 // function showMultiplicationTable(num) {
@@ -10,8 +10,8 @@ console.log("Hellooooo, is anyone out there...");
 //
 // showMultiplicationTable(num);
 //
-
-// #3
+//
+// // #3
 // var randomNumbers = Math.floor(Math.random() * 200) + 20;
 // for (var randomNumbers = 20; randomNumbers <= 200; randomNumbers++) {
 //     if (randomNumbers === 0) {
@@ -23,8 +23,8 @@ console.log("Hellooooo, is anyone out there...");
 //     }
 // }
 // console.log(randomNumbers);
-
-//#4
+//
+// // #4
 // var a, b;
 // var height = 9;
 // var string = "";
@@ -37,7 +37,7 @@ console.log("Hellooooo, is anyone out there...");
 // console.log(string);
 //
 //
-//  #5
+//  // #5
 // for (var i = 100; i >= 5; i-= 5) {
 //     console.log(i);
 //     }
