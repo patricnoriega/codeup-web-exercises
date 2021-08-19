@@ -1,14 +1,14 @@
 console.log("Hellooooo, is anyone out there...");
 // // #2
 // var num = parseInt(prompt("Enter a number"))
-// function showMultiplicationTable(num) {
-//     for (i = 1; i <= 10 ; i = i * 2) {
 //
-//         console.log(num + " * " + i + " = "  + num);
+// function showMultiplicationTable(num) {
+//     for (i = 1; i <= 10 ; i = i + 1) {
+//         console.log(num + " * " + i + " = "  + num * i);
 //     }
 // }
 //
-// showMultiplicationTable(num );
+// showMultiplicationTable(num);
 //
 
 // #3
