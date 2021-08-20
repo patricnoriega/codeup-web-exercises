@@ -1,6 +1,6 @@
 (function(){
     "use strict";
-console.log("I'm batman")
+// console.log("I'm batman")
     /**
      * TODO:
      * Create an array of 4 people's names and store it in a variable called
@@ -19,21 +19,27 @@ console.log("I'm batman")
      * Create log statements that will print each of the names individually by
      * accessing each element's index.
      */
-        console.log(names[0]);
-        console.log(names[1]);
-        console.log(names[2]);
-        console.log(names[3]);
-    /**
+            console.log(names[0]);
+            console.log(names[1]);
+            console.log(names[2]);
+            console.log(names[3]);
+        /**
      * TODO:
      * Write some code that uses a for loop to log every item in the names
      * array.
      */
+            for(var i = 0; i < names.length; i += 1) {
+                console.log("The 'name' index " + i + " is at: " + names[i]);
+            }
+
 
     /**
      * TODO:
      * Refactor your above code to use a `forEach` loop
      */
-
+            names.forEach(function(name) {
+                console.log("Element " + name);
+            });
     /**
      * TODO:
      * Create the following three functions, each will accept an array and
@@ -47,13 +53,14 @@ console.log("I'm batman")
      *  > second([1, 2, 3, 4, 5]) // returns 2
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
-    var fruits = ["apple", "banana", "orange", "plums", "cherries"]
-    console.log(fruits[0]);
+            var first = ["1", "2", "3", "4", "5"]
+                console.log(first[0]);
 
-    var clothes = ["shirt", "pants", "jeans", "sweaters", "dress"]
-    console.log(clothes[1]);
+            var second = ["1", "2", "3", "4", "5"]
+                console.log(second[1]);
 
-    var numbers = ["1","2","3","4","5"]
-    console.log(numbers[4]);
+            var last = ["1", "2", "3", "4", "5"]
+                console.log(last[4]);
+
 
 })();
