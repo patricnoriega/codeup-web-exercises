@@ -29,7 +29,9 @@
 
 
 // ============================= Adding and Removing Elements
-
+// // manually add to end of array
+//     pies[pies.length] = "banana";
+//     console.log(pies);
 /*
 
     // The following array methods change the original array value!
@@ -48,17 +50,28 @@
 //     "huckleberry",
 //     "rhubarb"
 // ];
-
-// array iteration
-
-// push
-
-// pop
-
-// shift
-
-// unshift
-
+//
+//
+//
+// // push
+// console.log(pies);
+// pies.push("banana");
+// console.log(pies);
+//
+// // pop
+//
+// var lastPie = pies.pop();
+// console.log("The last pie in the array is" + lastPie);
+//
+//
+// // shift
+//
+// var firstPie = pies.shift();
+//
+// // unshift
+//
+// pies.unshift(lastPie);
+// console.log(pies);
 
 
 // ============================= Slicing
@@ -80,12 +93,20 @@
 //     "huckleberry",
 //     "rhubarb"
 // ];
-
-
-// ** create a function that takes in an array of pies baked and return the 3 most recently baked pies
-
-
-
+// // var somePies = pies.slice(1, pies.length - 1);
+// // console.log(somePies)
+//
+//
+// // ** create a function that takes in an array of pies baked and return the 3 most recently baked pies
+//
+// var piesBaked = pies.slice(-3);
+// console.log(piesBaked);
+//
+// function lastThreePies(array) {
+//     return array.slice(-3);
+// }
+//
+// console.log(lastThreePies(pies))
 
 
 
@@ -102,10 +123,11 @@
 //     "huckleberry",
 //     "rhubarb"
 // ];
-
-// pies.sort(); // change the original value
-
-
+//
+// // pies.sort(); // change the original value
+//
+// pies.sort();
+// console.log(pies);
 
 
 
@@ -118,8 +140,13 @@
 //     "huckleberry",
 //     "rhubarb"
 // ];
-
-
+// console.log(pies);
+// pies.reverse();
+// console.log(pies);
+// pies.sort();
+// console.log(pies);
+// pies.reverse();
+// console.log(pies);
 
 
 // ============================= Split / Join
@@ -130,8 +157,9 @@
 // var names = "Bob Sally Mary";
 //
 // var namesArr = names.split(" ");
-//
-// var namesString = namesArr.join("");
+// console.log(namesArr);
+// //
+// var namesString = namesArr.join(", ");
 //
 // console.log(namesString);
 
@@ -144,17 +172,17 @@
 // var everyCharacter = bondsString.split("");
 
 // joining array into a string
-
+//
 // var bondsArray = ["Connery", "Lazenby", "Moore", "Dalton", "Brosnan", "Craig"];
 // var bondsString = bondsArray.join("_");
 //
-//
-// var output = "";
-// for (var i = 0; i < bondsArray.length; i += 1) {
-//     output += bondsArray[i];
-//     output += ", ";
-// }
-//
+// //
+// // var output = "";
+// // for (var i = 0; i < bondsArray.length; i += 1) {
+// //     output += bondsArray[i];
+// //     output += ", ";
+// // }
+// //
 // console.log(bondsString);
 
 
@@ -176,9 +204,24 @@
 
 */
 
-// var phoneNumbers = '210-555-2020\n230-555-2020\n512-555-3030';
+var phoneNumbers = '210-555-2020\n230-555-2020\n512-555-3030';
 
 
+function cleanPhoneNumbers(phoneNumbersString) {
+    var cleanPhoneNumbers = [];
+
+    var phoneNumbersArray = phoneNumbersString.split('\n');
+    phoneNumbersArray.forEach(function(phoneNumber) {
+
+        var cleanPhoneNumber = phoneNumber.split("-").join("");
+        cleanPhoneNumbers.push(cleanPhoneNumber);
+    });
+
+    return cleanPhoneNumbers;
+}
+
+var results = cleanPhoneNumbers(phoneNumbers);
+console.log(results)
 
 
 
