@@ -104,7 +104,7 @@ alert("Tip this amount: $" + calculateTip(billTotal, percentageTip) + " in USD. 
  * Example:
  * > var originalPrice = 100;
  * > var discountPercent = .2; // 20%
- * > applyDiscount(originalPrice, dicountPercent) // 80
+ * > applyDiscount(originalPrice, discountPercent) // 80
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
