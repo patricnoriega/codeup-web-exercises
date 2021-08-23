@@ -63,4 +63,22 @@
                 console.log(last[4]);
 
 
+
+            var num = [1, 2, 3, 4, 5]
+                function first(array) {
+                return (array[0])
+        }
+            console.log(first(num));
+
+
+                function second(array) {
+                return (array[1])
+        }
+            console.log(second(num));
+
+
+                function last(array) {
+                return (array[4])
+        }
+            console.log(last(num));
 })();
