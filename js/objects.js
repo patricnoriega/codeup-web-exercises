@@ -13,7 +13,10 @@
      */
     var person = {
         firstName: "Patric",
-        lastName: "Noriega"
+        lastName: "Noriega",
+        sayHello() {
+
+        }
     }
     console.log(person);
     /**
@@ -25,9 +28,9 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
  //     */
- // var sayHello = {
- //        return ("Hello from" + person.firstName + " " + person.lastName + " ");
- //        }
+ // sayHello
+ //        return("Hello from" + person.firstName + " " + person.lastName + " ");
+ //
  //    console.log(person.sayHello);
 
     /** TODO:
@@ -86,7 +89,7 @@
         },
         {
             title: "The fall",
-            author: "Albert Camu"
+            author: "Albert Camus"
         }
         ]
     console.log(books);
@@ -115,11 +118,13 @@
      *      ---
      *      ...
      */
-
-    // for (var i = 0; i < books.author.length ;i++) {
+    //
+    // for (var i = 0; i < books.length ;i++) {
     //     console.log("Here is the name of the author of: " + books + books.author[i]);
+    //     console.log(books.title);
+    //     console.log(books.author);
     // }
-    // console.log(books);
+
 
     /**
      * Bonus:
@@ -132,4 +137,35 @@
      *   `showBookInfo` function.
      */
 
+// function    var createBook = function (){
+//
+//     }
 })();
+
+
+// Create a function named rollSixSided that takes in a number as a parameter. Write code within your function that would generate the number between 1 and 6 [the dice] and then console.log the result to the user. Your loop should run the number of times as specified by the argument provided.
+//     Example:
+// rollSixSided(10)
+// Result:
+//     You rolled a 1
+// You rolled a 5
+// You rolled a 2
+// You rolled a 3
+// You rolled a 6
+// You rolled a 6
+// You rolled a 3
+// You rolled a 1
+// You rolled a 6
+// You rolled a 4
+
+function rollSixSided(num) {
+
+    for (var i = 0; i < num ; i++) {
+        var dice = Math.floor(Math.random() * 6 - 1 + 1) + 1;
+    console.log("You rolled a " + dice + " on your roll");
+    }
+
+
+
+}
+// console.log(rollSixSided());
