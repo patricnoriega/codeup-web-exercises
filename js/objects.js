@@ -13,12 +13,11 @@
      */
     var person = {
         firstName: "Patric",
-        lastName: "Noriega",
-
-
+        lastName: "Noriega"
 
     }
-        console.log(person);
+        console.log(person.firstName);
+        console.log(person.lastName);
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -54,24 +53,18 @@
         {name: 'Ryan', amount: 250},
         {name: 'George', amount: 320}
     ];
-        // console.log(shoppers);
 
-        var shoppersTotal = function () {
-            console.log(shoppers.name + " owes " + shoppers.amount + " before discount");
-        }
-        shoppers.amount = shoppersTotal();
 
-        var shoppersDiscount = function () {
-            if(shoppersTotal > 200) {
-            }
-        }
-
-        shoppers.forEach(function (shopper) {
-           shoppersTotal();
-    });
-        console.log(shoppersTotal());
-
-    // write the code for discounting ech person total from the array
+    // function shopperDiscount(shopper) {
+    //     shopper.amount
+    // }
+    //
+    //     shoppers.forEach(function (shopper) {
+    //         if(shopper.amount >= 200){
+    //
+    //         }
+    //     }
+    // });
 
 
     /** TODO:
