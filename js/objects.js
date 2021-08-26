@@ -55,16 +55,19 @@
     ];
 
 
-    // function shopperDiscount(shopper) {
-    //     shopper.amount
-    // }
-    //
-    //     shoppers.forEach(function (shopper) {
-    //         if(shopper.amount >= 200){
-    //
-    //         }
-    //     }
-    // });
+    function shopperDiscount(shopper) {
+        var shopperTotalAfterDiscount = shopper.amount -shopper.amount * .12;
+        return shopperTotalAfterDiscount;
+    }
+
+        shoppers.forEach(function (shopper) {
+            if(shopper.amount >= 200) {
+                var pay = shopperDiscount(shopper);
+                console.log("Name: " + shopper.name + " Total before discount: " + shopper.amount + " Discount applied: 12%, Total after discount:" + pay)
+            }else {
+                console.log("Name: " + shopper.name + " Total amount: " + shopper.amount + " No Discount.");
+            }
+    });
 
 
     /** TODO:
@@ -82,23 +85,38 @@
     var books = [
         {
             title: "On the Road",
-            author: "Jack Kerouac"
+            author: {
+                firstName: "Jack",
+                lastName: " Kerouac"
+            }
         },
         {
             title:"A Movable feast",
-            author:"Ernest Hemingway"
+            author: {
+                firstName: "Ernest",
+                lastName: " Hemingway"
+            }
         },
         {
             title: "Leaving Las Vegas",
-            author: "John O'Brien"
+            author: {
+                firstName: "John",
+                lastName: " O'brien"
+            }
         },
         {
             title: "Post Office",
-            author: "Charles Bukowski"
+            author: {
+                firstName: "Charles",
+                lastName: " Bukowski"
+            }
         },
         {
             title: "The fall",
-            author: "Albert Camus"
+            author: {
+                firstName: "Albert",
+                lastName: " Camus"
+            }
         }
         ]
     console.log(books);
@@ -128,15 +146,21 @@
      *      ...
      */
     //
-    for (var i = 0; i < books.length ; i++) {
-        console.log("Here is the name of the author of: " + books + books.author[i]);
-
-        console.log(books.indexOf());
-        console.log(books.title);
-        console.log(books.author);
-
-    }
-        console.log(books);
+    // for (var i = 0; i < books.length ; i++) {
+    //     console.log("Here is the name of the author of: " + books + books.author[i]);
+    //
+    //     console.log(books.indexOf());
+    //     console.log(books.title);
+    //     console.log(books.author);
+    //
+    // }
+    //     console.log(books);
+    books.forEach(function (book,index) {
+        console.log("Book # " + (index + 1));
+        console.log("Title: " + book.title);
+        console.log("Author: " + book.author.firstName + book.author.lastName);
+        console.log("---------");
+    });
 
     /**
      * Bonus:
@@ -148,6 +172,8 @@
      *   outputs the information described above. Refactor your loop to use your
      *   `showBookInfo` function.
      */
+
+
 
 })();
 
