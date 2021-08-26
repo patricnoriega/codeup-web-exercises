@@ -11,14 +11,14 @@
      *  > console.log(person.firstName) // "Rick"
      *  > console.log(person.lastName) // "Sanchez"
      */
-    // var person = {
-    //     firstName: "Patric",
-    //     lastName: "Noriega",
-    //
-    //
-    //
-    // }
-    //     console.log(person);
+    var person = {
+        firstName: "Patric",
+        lastName: "Noriega",
+
+
+
+    }
+        console.log(person);
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -28,12 +28,12 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
-    //     person.sayHello
-    // {
-    //     console.log("Hello from " +  person.firstName + " " + person.lastName + " ");
-    // }
-    //
-    //     console.log(person.sayHello);
+        person.sayHello
+    {
+        console.log("Hello from " +  person.firstName + " " + person.lastName + " ");
+    }
+
+        console.log(person.sayHello);
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -49,27 +49,27 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
-    //     // console.log(shoppers);
-    //
-    //     var shoppersTotal = function () {
-    //         console.log(shoppers.name + " owes " + shoppers.amount + " before discount");
-    //     }
-    //     shoppers.amount = shoppersTotal();
-    //
-    //     var shoppersDiscount = function () {
-    //         if(shoppersTotal > 200) {
-    //         }
-    //     }
-    //
-    //     shoppers.forEach(function (shopper) {
-    //        shoppersTotal();
-    // });
-    //     console.log(shoppersTotal());
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+        // console.log(shoppers);
+
+        var shoppersTotal = function () {
+            console.log(shoppers.name + " owes " + shoppers.amount + " before discount");
+        }
+        shoppers.amount = shoppersTotal();
+
+        var shoppersDiscount = function () {
+            if(shoppersTotal > 200) {
+            }
+        }
+
+        shoppers.forEach(function (shopper) {
+           shoppersTotal();
+    });
+        console.log(shoppersTotal());
 
     // write the code for discounting ech person total from the array
 
@@ -86,29 +86,29 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
-    // var books = [
-    //     {
-    //         title: "On the Road",
-    //         author: "Jack Kerouac"
-    //     },
-    //     {
-    //         title:"A Movable feast",
-    //         author:"Ernest Hemingway"
-    //     },
-    //     {
-    //         title: "Leaving Las Vegas",
-    //         author: "John O'Brien"
-    //     },
-    //     {
-    //         title: "Post Office",
-    //         author: "Charles Bukowski"
-    //     },
-    //     {
-    //         title: "The fall",
-    //         author: "Albert Camus"
-    //     }
-    //     ]
-    // console.log(books);
+    var books = [
+        {
+            title: "On the Road",
+            author: "Jack Kerouac"
+        },
+        {
+            title:"A Movable feast",
+            author:"Ernest Hemingway"
+        },
+        {
+            title: "Leaving Las Vegas",
+            author: "John O'Brien"
+        },
+        {
+            title: "Post Office",
+            author: "Charles Bukowski"
+        },
+        {
+            title: "The fall",
+            author: "Albert Camus"
+        }
+        ]
+    console.log(books);
 
     /**
      * TODO:
@@ -135,15 +135,15 @@
      *      ...
      */
     //
-    // for (var i = 0; i < books.length ; i++) {
-    //     console.log("Here is the name of the author of: " + books + books.author[i]);
-    //
-    //     console.log(books.indexOf());
-    //     console.log(books.title);
-    //     console.log(books.author);
-    //
-    // }
-    //     console.log(books);
+    for (var i = 0; i < books.length ; i++) {
+        console.log("Here is the name of the author of: " + books + books.author[i]);
+
+        console.log(books.indexOf());
+        console.log(books.title);
+        console.log(books.author);
+
+    }
+        console.log(books);
 
     /**
      * Bonus:
@@ -174,14 +174,14 @@
 // You rolled a 6
 // You rolled a 4
 
-// function rollSixSided(num) {
-//
-//     for (var i = 0; i < num ; i++) {
-//         var dice = Math.floor(Math.random() * 6 - 1 + 1) + 1;
-//         console.log("You rolled a " + dice + " on your roll");
-//     }
-//
-//
-//
-// }
-// console.log(rollSixSided());
+function rollSixSided(num) {
+
+    for (var i = 0; i < num ; i++) {
+        var dice = Math.floor(Math.random() * 6 - 1 + 1) + 1;
+        console.log("You rolled a " + dice + " on your roll");
+    }
+
+
+
+}
+console.log(rollSixSided());
