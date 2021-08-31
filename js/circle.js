@@ -19,8 +19,14 @@
 
             // If doRounding is true, round the result to the nearest integer.
             // Otherwise, output the complete value
-            if(doRounding === true) {
-                return Math.round(area);
+
+            // if(doRounding === true) {
+            //     return Math.round(area);
+            // }
+            if (doRounding){
+                console.log()
+            }else {
+
             }
             console.log("Area of a circle with radius: " + this.radius + ", is: ");
         }
@@ -34,6 +40,8 @@
 
     console.log("=======================================================");
     // TODO: Change the radius of the circle to 5.
+
+    circle.radius = 5
 
     // log info about the circle
     console.log("Raw circle information");
