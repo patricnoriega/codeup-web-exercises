@@ -6,42 +6,46 @@
 </head>
 
 <body>
-<h1>Register With Us!</h1>
+<h1>Veridian Dynamics Registration Form!</h1>
+<hr>
 <br>
-<form method="POST" action="https://hookb.in/kxp6eNegEksBjzggj3wJ">
+<form method="POST" action="https://request-inspector.glitch.me/">
 <div>
-    <label for="username">Email</label>
-    <input id="username" name="username" type="text" placeholder="Enter your email address">
-    <br>
+    <label for="email">Email</label>
+    <input id="email" name="email" type="text" placeholder="example@hotmail.com">
+</div>
 
+    <div>
     <label for="password">Password</label>
     <input id="password" name="password" type="password">
-</div>
+    </div>
     <br>
+
     <div>
-        <label id="bio">Bio<br>
-            <textarea name="bio" type="text" placeholder="Tell us about yourself!"></textarea>
-        </label>
+        <label id="bio">Bio:</label>
+        <br>
+            <textarea name="bio" rows="10" cols="30" placeholder="Tell us about yourself!"></textarea>
     </div>
    <div>
        <h2>How did you hear about us ?</h2>
        <label for="billboard">
-           Billboard <input id="billboard" type="checkbox" name="option1" value="billboard">
+           Billboard <input id="billboard" type="radio" name="hearaboutus" value="billboard">
        </label>
        <label for="radio ad">
-           radio advertisement <input id="radio ad" type="checkbox" name="option2" value="radio advertisement">
+           Radio advertisement <input id="radio ad" type="radio" name="hearaboutus" value="radio advertisement">
        </label>
        <label for="internet">
-           internet advertisement <input id="internet" type="checkbox" name="option3" value="internet advertisement">
+           Internet advertisement <input id="internet" type="radio" name="hearaboutus" value="internet advertisement">
        </label>
        <label for="other">
-           Other <input id="other" type="checkbox" name="option4" value="other">
+           Other <input id="other" type="radio" name="hearaboutus" value="other">
        </label>
    </div>
     <br>
     <div>
         <label id="What Browser are you using?">What Browser are you using?
             <select name="What Browser are you using?">
+                <option value="" disabled selected> --Please choose an option--</option>
                 <option value="chrome">Google Chrome </option>
                 <option value="firefox">Mozilla Firefox</option>
                 <option value="explorer">Internet Explorer</option>
@@ -50,7 +54,7 @@
         </label>
     </div>
     <br>
-    <input type="submit">
+    <button type="submit">Register</button>
 </form>
 
 </body>
