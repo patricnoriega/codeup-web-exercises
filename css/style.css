@@ -1,7 +1,6 @@
 .fancy-header {
     color: antiquewhite;
     text-align: center;
-    /*background-image: url("/img/the-hunt-eye.jpeg");*/
 }
 
 .secondary-header {
@@ -10,20 +9,27 @@
 }
 
  body   {
-    background-color:black;
+     background-color:black;
+     background-image: url("/img/skull.jpeg");
+     background-repeat: no-repeat;
+     /*background-position: top, right;*/
+     height: 500px;
+     background-position-x: right;
+     background-position-y: top;
+     background-size: 560px 575px;
 
 
  }
 
  .fancy-words {
      color: antiquewhite;
-     text-align: center;
+     text-align: left;
 
      list-style-position: inside;
  }
 
 ul{
-    padding-left:0px;
+    padding-left:0;
 }
 ul li{
     list-style-position: inside;
@@ -33,3 +39,29 @@ ul li{
     margin-left: auto;
     margin-right: auto;
 }
+
+.accordion {
+    background-color: antiquewhite;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 50%;;
+    text-align: center;
+    transition: 0.4s;
+    border: none;
+    outline: none;
+    /*opacity: initial;*/
+}
+
+.active, .accordion:hover {
+    background-color: dimgrey;
+}
+
+.dropdown {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    max-height: 100px;
+    transition: max-height 0.2s ease-out;
+}
+
