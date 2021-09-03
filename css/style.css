@@ -18,6 +18,18 @@
  .fancy-words {
      color: antiquewhite;
      text-align: center;
+
      list-style-position: inside;
  }
 
+ul{
+    padding-left:0px;
+}
+ul li{
+    list-style-position: inside;
+}
+
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
