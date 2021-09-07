@@ -28,29 +28,24 @@ a {
 .top-nav {
     background: var(--light-bg);
     width: 100%;
-    display: inline-block;
-    padding: 1.5em;
     z-index: 1000;
 }
 .nav {
     list-style-type: none;
-    padding: 1.5em;
     margin: 0;
-    display: inline-block;
+}
 
+.nav-item {
+    display: inline-block;
+    padding: 1.5em;
 }
 .nav-link {
     color: var(--main-link-color);
     font-weight: bold;
     text-decoration: none;
-    display: inline-block;
-    padding: 1.5em;
-
 }
 .nav-link:hover {
     color: var(--link-color);
-    display: inline-block;
-    padding: 1.5em;
 }
 .profile {
     background: var(--light-bg);
@@ -63,7 +58,6 @@ a {
 .profile-form {
     line-height: 80px;
     position: center;
-
 }
 .btn {
     border: 1px solid var(--main-link-color);
@@ -89,30 +83,31 @@ a {
     color: var(--main-link-color);
 }
 .profile-details{
-    width: 25%;
+    width: calc(25% - 1px);
     margin: 0 .5em;
     float: left;
+
 }
 
 .timeline{
-    width: 50%;
+    width: calc(50% - 1px);
     margin: 0 .5em;
     float: left;
 }
 
 .who-to-follow{
-    width: 25%;
+    width: calc(25% -);
     margin: 0 .5em;
     float: right;
 }
 #container{
     padding: 2em;
 }
-.media{
+.media {
     width: 100%;
-    background-color: white;
-    border-bottom: 1px;
-    --separator-color:gray;
+    background-color: var(--light-bg);
+    border-bottom: 1px solid;
+    --separator-color: #c9c7c7;
     padding: .5em;
     overflow: auto;
 }
@@ -123,9 +118,13 @@ a {
 }
 .media-body {
     float: right;
-    width: 100%;
-    calc(100% -);
+    width: calc(100% - 50px);
 }
 .profile-entry{
     margin: .5em;
+}
+
+.profile-items {
+    padding: 0;
+    list-style: none;
 }
