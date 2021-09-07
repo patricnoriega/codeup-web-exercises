@@ -38,7 +38,8 @@ fieldset {
 
 .form-group {
     width: 100%;
-    padding: .5em;
+    margin-top: .5em;
+    margin-bottom: .5em;
     /* This element must use 100% of the width */
     /* It should have a separation of .5em from elements on top of it and below it*/
 }
@@ -56,7 +57,8 @@ fieldset {
 .btn {
     padding: 8px;
     font-weight: bold;
-
+    color: white;
+    border: 1px solid lightgray;
 
     /* There must be a separation of 8px between the text and the border of this element */
     /* The text color of this element should be white and bold */
@@ -73,6 +75,10 @@ fieldset {
     /* HINT: Calculate based on the padding of the `.btn` class */
     /* HINT: Examples are available at: https://glitch.com/~input-button-width */
     width: 100%;
+    padding: 4px 0;
+    margin: .5em 0;
+    calc(100% - 2px);
+    border: 1px solid lightgray;
 }
 
 
