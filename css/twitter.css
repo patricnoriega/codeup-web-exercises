@@ -90,14 +90,14 @@ a {
 }
 
 .timeline{
-    width: calc(50% - 1px);
-    margin: 0 .5em;
+    width: calc(50% - 10px);
+    margin: .5em;
     float: left;
 }
 
 .who-to-follow{
     width: calc(25% -);
-    margin: 0 .5em;
+    margin: .5em;
     float: right;
 }
 #container{
@@ -106,10 +106,11 @@ a {
 .media {
     width: 100%;
     background-color: var(--light-bg);
-    border-bottom: 1px solid;
-    --separator-color: #c9c7c7;
+    border-bottom: 1px;
+    /*--separator-color: #c9c7c7;*/
     padding: .5em;
     overflow: auto;
+    margin: .1em;
 }
 .media-image {
     width: 50px;
