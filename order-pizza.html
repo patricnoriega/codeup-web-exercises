@@ -43,63 +43,78 @@
     <div>
       <h2 class="Build-pizza">Build Your own pizza!</h2>
     </div>
-    <ul class="nav nav-tabs">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Size and Crust</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Cheese and Sauce</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Toppings</a>
-      </li>
-    </ul>
-    <div class="card" style="width: 73rem;">
-      <div class="card-header">
-          Choose size and crust
-      <div class="card" style="width: 69rem;">
-        <div class="card-header">
-          Hand Tossed
-        </div>
-        <div class="card">
-          <div class="card-body">
-          Garlic seasoned crust with a rich, buttery taste
-          </div>
-        </div>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item">
-          <div class="input-group">
-          <input id="small" type="radio" aria-label="Radio button for following text input">
-            <label for="small">small (10")</label>
-          </div>
-        </li>
-        <li class="list-group-item">medium (12")</li>
-      </ul>
-      </div>
-        <div class="card" style="width: 69rem;">
+  </div>
+
+    <div class="container">
+      <div class="container">
+        <div class="card text-left">
           <div class="card-header">
-          Crispy Thin
+            <ul class="nav nav-tabs card-header-tabs">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#size-crust">Size and crust</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#cheese-sauce">Cheese and sauce</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#topping">Toppings</a>
+              </li>
+            </ul>
           </div>
-          <div class="card">
-            <div class="card-body">
-              Thin enough for optimum crispy to crunchy ratio
+          <div class="tab-content card-body">
+            <div id="size-crust" class="tab-pane active">Size and crust</div>
+            <div id="cheese-sauce" class="tab-pane">Cheese and sauce</div>
+            <div id="topping" class="tab-pane">Toppings</div>
+          </div>
+        </div>
+        <div class="card" style="width: 73rem;">
+          <div class="card-header">
+            Choose size and crust
+            <div class="card" style="width: 69rem;">
+              <div class="card-header">
+                Hand Tossed
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  Garlic seasoned crust with a rich, buttery taste
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="input-group">
+                    <input id="small" type="radio" aria-label="Radio button for following text input">
+                    <label for="small">small (10")</label>
+                  </div>
+                </li>
+                <li class="list-group-item">medium (12")</li>
+              </ul>
+            </div>
+            <div class="card" style="width: 69rem;">
+              <div class="card-header">
+                Crispy Thin
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  Thin enough for optimum crispy to crunchy ratio
+                </div>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                  <div class="input-group">
+                    <input type="radio" aria-label="Radio button for following text input">
+                  </div>Medium (12")</li>
+                <li class="list-group-item">Large (14")</li>
+              </ul>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">Next Step ></a>
+              </div>
             </div>
           </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-              <div class="input-group">
-                <input type="radio" aria-label="Radio button for following text input">
-              </div>Medium (12")</li>
-            <li class="list-group-item">Large (14")</li>
-          </ul>
-          <div class="card-footer">
-          <a href="#" class="btn btn-primary">Next Step ></a>
-          </div>
+
         </div>
       </div>
     </div>
 
-  </div>
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
