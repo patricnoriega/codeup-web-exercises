@@ -18,7 +18,7 @@
     <li data-dbid="5">Item 5</li>
 </ul>
 <h2 id="sub-header">Hello Again.</h2>
-<button id="btn3">Click Me!</button>
+<button id="btn3">Change my color!</button>
 <p class="sub-paragraph">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -28,7 +28,7 @@
     pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
-<button id="btn4">Click Me!</button>
+<button id="btn4">Double Click Me!</button>
 <script>
     var button1 = document.getElementById("btn1");
     var button2 = document.getElementById("btn2");
@@ -44,7 +44,29 @@
         button1.addEventListener("click", mainHeader);
     })
 
+    button2.addEventListener("click", function(){
+        var listItems = document.getElementsByTagName("li");
+        var dbId1 = listItems[0].getAttribute('data-dbid');
+       if (dbId1 === "1") {
+           listItems[0].style.color = "blue"
+       }
+        button2.addEventListener("click", listItems);
+    })
 
+    button3.addEventListener("click", function(){
+        var subHeader = document.getElementsByTagName("h2");
+        for (var i = 0; i < subHeader.length; i++) {
+            subHeader[i].style.color = "blue";
+        }
+        button3.addEventListener("click", subHeader);
+    })
+    button4.addEventListener("dblclick", function(){
+        var subParagraph = document.getElementsByTagName("p");
+        for (var i = 0; i < subParagraph.length; i++) {
+            subParagraph[i].innerText = "Mission Accomplished";
+        }
+        button4.addEventListener("dblclick", subParagraph);
+    })
 
 //    (function() {
 //        "use strict";
