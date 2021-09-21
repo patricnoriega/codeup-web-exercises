@@ -10,55 +10,63 @@ console.log("hellooo");
 // }
 //tellFortune();
 
-function tellFortune(kids, married, lives, job) {
-    var output = "this is your future, you will have" + kids + "living in," + lives + "married to," + married + "working as," + job;
-    return output;
-}
-tellFortune();
+// function tellFortune(kids, married, lives, job) {
+//     var output = "this is your future, you will have" + kids + "living in," + lives + "married to," + married + "working as," + job;
+//     return output;
+// }
+// tellFortune();
 
 // function calculateDogAge(humanYears) {
 //     var dogYears = humanYears * 7;
 //     return "my dog is " + dogYears + " old in dog years!";
 // }
 // calculateDogAge();
-function calculateDogAge(puppyAge, conversionNum) {
-   var humanYears = puppyAge * conversionNum;
-    return "my dog is " + humanYears + "  years old in dog years " + " and is " + puppyAge + " in dog years" ;
-}
-calculateDogAge();
+// function calculateDogAge(puppyAge, conversionNum) {
+//    var humanYears = puppyAge * conversionNum;
+//     return "my dog is " + humanYears + "  years old in dog years " + " and is " + puppyAge + " in dog years" ;
+// }
+// calculateDogAge();
 
 // Given arrays of strings that are orders of food in string form to your function, write a function named tacoTuesday that returns TRUE or FALSE if the array provided has any element mention the word ‘taco’ in its value.
+//
+//     var hasTacos = ['blueberry muffin', 'banana', 'yogurt', 'cereal', 'brisket and egg taco']
+//     var noTacos = ['parfait', 'omlette de frumage', 'protein shake', 'fasting'];
+//
+//     tacoTuesday(hasTacos) //true
+//     tacoTuesday(noTacos) //false
 
-    var hasTacos = ['blueberry muffin', 'banana', 'yogurt', 'cereal', 'brisket and egg taco']
-    var noTacos = ['parfait', 'omlette de frumage', 'protein shake', 'fasting'];
+//my code
+// function tacoTuesday(hasTacos) {
+//     return hasTacos === "taco" || noTacos == "taco";
+// }
+//     function tacoTuesday(hasTacos, noTacos) {
+//     if (hasTacos.includes("taco")){
+//         return true;
+//     }else{
+//         if (noTacos.includes("taco")){
+//             return false;
+//             }
+//         }
+//     }
 
-    tacoTuesday(hasTacos) //true
-    tacoTuesday(noTacos) //false
+//code review
+// function tacoTuesday(arr) {
+//     for (var i = 0; i < arr.length; i++) {
+//
+//     }
+//     if (arr[i].includes("taco")) {
+//         return true;
+//     }
+//         return false;
+// }
 
-    //my code
-    // function tacoTuesday(hasTacos) {
-    //     return hasTacos === "taco" || noTacos == "taco";
-    // }
-    //     function tacoTuesday(hasTacos, noTacos) {
-    //     if (hasTacos.includes("taco")){
-    //         return true;
-    //     }else{
-    //         if (noTacos.includes("taco")){
-    //             return false;
-    //             }
-    //         }
-    //     }
-
-    //code review
-    // function tacoTuesday(arr) {
-    //     for (var i = 0; i < arr.length; i++) {
-    //
-    //     }
-    //     if (arr[i].includes("taco")) {
-    //         return true;
-    //     }
-    //         return false;
-    // }
-
-
-
+//my code
+function logEvens(num) {
+    for (var i = 2; i <= 10; i += 2) {
+        if (i % 2 !== 0) {
+            continue;
+        }
+        console.log(i);
+    }
+}
+logEvens(10);
