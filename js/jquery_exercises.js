@@ -47,6 +47,11 @@ $('h1').click(function () {
     $('h1').css('color', 'blue');
 });
 
+$('h2').click(function () {
+    alert('this is the h2 heading');
+    $('h2').css('color', 'red');
+});
+
 $('p').dblclick(function (e) {
     alert('paragraph was dbl-clicked')
     $('p').css('font-size', '18px').css('font-family', 'arial');
