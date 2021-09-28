@@ -70,3 +70,28 @@ function logEvens(num) {
     }
 }
 logEvens(10);
+
+function logNum(num){
+    for (var i = 1; i <= 10; i++){
+        if(i % 2 !== 0){
+            console.log(i + " is an odd number");
+        }else{
+            console.log(i + " is an even number");
+        }
+
+    }
+}
+logNum(10);
+
+// function fizzBuzz(num){
+//     for (var i = 1; i <= 100; i++){
+//         if(i % 3 === 0) {
+//             console.log(i + " fizz");
+//         }else if (i % 5 === 0){
+//             console.log(i + " buzz");
+//         }else if (i % 3 === 0 && i % 5 === 0){
+//             console.log(i + " fizz buzz");
+//         }
+//     }
+// }
+// fizzBuzz(100);
