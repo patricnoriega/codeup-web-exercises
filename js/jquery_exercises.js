@@ -37,6 +37,7 @@ $('li').css('font-size', '20px');
 
 $('h1, p, li').css('background-color','yellow');
 
-var h1Contents = $('h1').html();
-alert(h1Contents);
+ $('h1').click(function () {
+alert('this is the h1 heading');
+});
 
