@@ -26,18 +26,36 @@ console.log("hello")
 // all selector:
 // $('*').css('border', '1px solid red').css('padding', '10px').css('margin', '10px')
 
-// exercise two:
+// exercise two selectors:
+//
+// var contents = $('#codeup').html();
+// alert(contents);
+//
+// $('.codeup').css('border', '1px solid red').css('margin', '10px');
+//
+// $('li').css('font-size', '20px');
+//
+// $('h1, p, li').css('background-color','yellow');
+//
+//  $('h1').click(function () {
+// alert('this is the h1 heading');
+// });
 
-var contents = $('#codeup').html();
-alert(contents);
+// exercise three events:
+$('h1').click(function () {
+    alert('this is the h1 heading');
+    $('h1').css('color', 'blue');
+});
 
-$('.codeup').css('border', '1px solid red').css('margin', '10px');
+$('p').dblclick(function (e) {
+    alert('paragraph was dbl-clicked')
+    $('p').css('font-size', '18px').css('font-family', 'arial');
+ });
 
-$('li').css('font-size', '20px');
-
-$('h1, p, li').css('background-color','yellow');
-
- $('h1').click(function () {
-alert('this is the h1 heading');
+$('li').hover(function () {
+    $(this).css('color', 'red');
+    },
+    function () {
+    $(this).css('color', 'black');
 });
 
