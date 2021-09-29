@@ -64,3 +64,26 @@ $('li').hover(function () {
     $(this).css('color', 'black');
 });
 
+// keyboard events lecture
+
+// keydown:
+// $('body').keydown(function (event) {
+//     console.log(event.key);
+// })
+
+// keypress:
+// $('body').keypress(function (event) {
+//     console.log(event.key);
+// })
+
+var mykeys = ""
+// keyup:
+$('body').keyup(function (event) {
+    console.log("the key you pressed: " + event.key);
+    mykeys += event.key;
+    console.log(mykeys);
+    if (mykeys === "quasar"){
+        alert(" this is the cooool thing")
+    }
+})
+

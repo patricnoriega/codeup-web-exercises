@@ -1,0 +1,6 @@
+.dontshow{
+    display: none;
+}
+.show:hover .dontshow{
+    display : block;
+}
