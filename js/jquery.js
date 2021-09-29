@@ -20,7 +20,7 @@ $(document).keyup(function(event){
     console.log(konamiCode);
 
     if (userKeys == konamiCode){
-        alert('easter egg found');
+        // alert('easter egg found');
         $('body').css("background-image", "url('img/giphy.gif')")
     }
 });
