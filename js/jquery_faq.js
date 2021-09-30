@@ -12,12 +12,9 @@
 
      $('#highlight-li').click(function (event) {
          event.preventDefault();
-         $('li').each(function (index) {
-             if (index % 2 !== 0) {
-                 $(this).css('background-color', 'yellow');
-             }
-         });
-     })
+         $('li').last().css('background-color', 'yellow');
+             })
+
         $('h3').click(function (event){
             event.preventDefault();
             $('#artist-albums').next().css('font-weight', 'bold');
