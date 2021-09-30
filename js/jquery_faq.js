@@ -1,26 +1,12 @@
-
-$(document).ready(function() {
-    $('.invisible').click(function (event) {
-        event.preventDefault();
-        $('.invisible').addClass('visible');
-    })
-})
-    $(document).ready(function () {
+ $(document).ready(function () {
         $('#highlight-important').click(function (event) {
             event.preventDefault();
-            $('.invisible').toggleClass('visible');
+            $('dd').toggleClass('invisible');
         });
-    })
-
-$(document).ready(function() {
-    $('dt').click(function (event) {
-        event.preventDefault();
-        $('dt').addClass('highlighted');
-    })
-})
-
-    $('#highlight-dt').click(function (event) {
-        event.preventDefault();
-        $('dt').toggleClass('highlighted');
+        $('dt').addClass('highlighted')
+        $('#highlight-dt').click(function (event) {
+            event.preventDefault();
+            $('dt').toggleClass('highlighted');
+        })
     })
 
