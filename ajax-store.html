@@ -24,23 +24,22 @@
 <script>
 (function() {
     "use strict";
+    $.ajax("data/inventory.json").done(function(data, status, jqXhr) {
+    data.forEach(function (item) {
 
-    function renderTool(tool) {
-        var html = ""
-        var html = '<textarea class ="tool">';
-    html += '<p>'+ tool.title + '</p>';
-    html += '<p>'+ tool.catagory + '</p>';
-    html += '<p>' + tool.price + '</p>';
+        var html = "<tr>" +
+            '<th>'+ item.title + '</th>'+
+            '<th>' + item.quantity + '</th>'+
+            '<th>'+ item.categories + '</th>'+
+            '<th>' + item.price + '</th>'+
+            '</tr>'
 
-
-    return html;
-
-    }
+        $('#insertProducts').append(html)
+    })
 
 
     // TODO: Create an AJAX GET request for the file under data/inventory.json
-        $.ajax("data/inventory.json").done(function(data, status, jqXhr) {
-            console.log(data);
+
 
 
 
