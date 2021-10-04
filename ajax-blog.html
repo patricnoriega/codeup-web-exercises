@@ -18,9 +18,16 @@
 <script>
     $.ajax("data/blog.json").done(function(data, status, jqXhr) {
         data.forEach(function (item) {
+            var html = "<div>" +
+                '<div>' + item.title + '</div>' +
+                '<div>' + item.content + '</div>' +
+                '<div>' + item.categories + '</div>' +
+                '<div>' + item.date + '</div>' +
+                '</div>'
 
-
+            $('#posts').append(html)
         })
+    })
 </script>
 </body>
 </html>
