@@ -1,0 +1,15 @@
+.jumbotron-fluid{
+    background-image: url("/img/tools.jpeg");
+
+}
+
+h1 {
+    text-align: center;
+    background-color: antiquewhite;
+    color: black;
+}
+.lead{
+    text-align: center;
+    background-color: antiquewhite;
+    color: black;
+}
