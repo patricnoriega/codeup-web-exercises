@@ -24,3 +24,16 @@ geocode("17619 La Cantera Pkwy #208, San Antonio, TX 78257",mapBoxKey).then(func
         .setPopup(popUp)
         .addTo(map)
 })
+
+geocode("Våghustorget 1, 702 10 Örebro, Sweden", mapBoxKey).then(function (results){
+    var popUp2 = new mapboxgl.Popup()
+        .setHTML("<em>Dine Burgers</em>")
+
+    new mapboxgl.Marker()
+        .setLngLat(results)
+        .setPopup(popUp2)
+        .addTo(map)
+
+    map.flyTo({center:results})
+
+})
