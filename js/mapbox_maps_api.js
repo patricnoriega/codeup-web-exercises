@@ -1,7 +1,6 @@
 
 mapboxgl.accessToken = mapBoxKey;
 console.log(mapBoxKey);
-
 var map = new mapboxgl .Map(
     {
         container: "map",
@@ -10,6 +9,20 @@ var map = new mapboxgl .Map(
         zoom: 15
     }
 )
+
+geocoder = new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken = mapBoxKey,
+    marker: {
+        color: 'orange'
+    },
+    mapboxgl: mapboxgl
+});
+
+map.addControl(geocoder);
+//---button for zoom control---
+map.addControl(new mapboxgl.NavigationControl());
+
+
 geocode("17619 La Cantera Pkwy #208, San Antonio, TX 78257",mapBoxKey).then(function (results){
     var popUp = new mapboxgl.Popup()
         .setHTML("<em>Bakudan Ramen-</em> When I go here for ramen it is usually for happy hour because they have a good selection of half price appetizers and drinks and the ramen is well worth it my order is the shrimp tempura with a side of the san antonio bomb for extra flavor. ")
@@ -73,4 +86,8 @@ restaurants.forEach(function (restaurant,index) {
     console.log("name: " + restaurant.name);
     console.log("location: " + restaurant.location);
     console.log("-------");
+
+
+
+
 });
