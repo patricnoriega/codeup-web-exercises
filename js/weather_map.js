@@ -7,7 +7,17 @@ $.get("https://api.openweathermap.org/data/2.5/weather", {
     units: "imperial"
 }).done(function(data) {
     console.log(data);
+    var html = "<div>" +
+        '<div>' + data.name + '</div>'+
+        '<div>' + data.main.temp + '</div>'+
+        '<div>' + data.main.temp_max + '</div>'+
+        '<div>' + data.main.temp_min + '</div>'+
+        '<div>' + data.weather.main + '</div>'+
+        '<div>' + data.weather.description + '</div>'+
+        '</div>'
+    $('#current-conditions').append(html)
 });
+
 
 $.get("http://api.openweathermap.org/data/2.5/forecast", {
     APPID: openWeatherKey,
@@ -16,16 +26,24 @@ $.get("http://api.openweathermap.org/data/2.5/forecast", {
     units: "imperial"
 }).done(function(data) {
     console.log('5 day forecast', data);
+//     var html = "<div>" +
+//         '<div>' + data.name + '</div>'+
+//         '<div>' + data.main.temp + '</div>'+
+//         '<div>' + data.main.temp_max + '</div>'+
+//         '<div>' + data.main.temp_min + '</div>'+
+//         '<div>' + data.weather.main + '</div>'+
+//         '<div>' + data.weather.description + '</div>'+
+//         '</div>'
+//     $('#five-day').append(html)
 });
 
-$.ajax("https://api.openweathermap.org/data/2.5/weather").done(function(data, status, jqXhr) {
-    data.forEach(function (data) {
-        var html = "<div>" +
-            '<div>'+ data.name + '</div>'+
-            '<div>' + data.main + '</div>'+
-            '<div>' + data.visibility + '</div>'+
-            '<div>'+ data.weather + '</div>'+
-            '</div>'
-        $('#current-conditions').append(html)
-    })
-})
+mapboxgl.accessToken = mapBoxKey;
+console.log(mapBoxKey);
+var map = new mapboxgl .Map(
+    {
+        container: "map",
+        style: "mapbox://styles/mapbox/streets-v11",
+        center: [-98.4870, 29.4284],
+        zoom: 10
+    }
+)
