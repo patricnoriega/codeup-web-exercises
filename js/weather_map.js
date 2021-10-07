@@ -18,12 +18,6 @@ $.get("https://api.openweathermap.org/data/2.5/weather", {
     $('#current-conditions').append(html)
 });
 
-//----function for displaying current weather in html---
-// $.ajax("https://api.openweathermap.org/data/2.5/weather").done(function(data, status, jqXhr) {
-//     data.forEach(function (data) {
-//
-//     })
-// })
 
 $.get("http://api.openweathermap.org/data/2.5/forecast", {
     APPID: openWeatherKey,
@@ -32,6 +26,24 @@ $.get("http://api.openweathermap.org/data/2.5/forecast", {
     units: "imperial"
 }).done(function(data) {
     console.log('5 day forecast', data);
+//     var html = "<div>" +
+//         '<div>' + data.name + '</div>'+
+//         '<div>' + data.main.temp + '</div>'+
+//         '<div>' + data.main.temp_max + '</div>'+
+//         '<div>' + data.main.temp_min + '</div>'+
+//         '<div>' + data.weather.main + '</div>'+
+//         '<div>' + data.weather.description + '</div>'+
+//         '</div>'
+//     $('#five-day').append(html)
 });
 
-
+mapboxgl.accessToken = mapBoxKey;
+console.log(mapBoxKey);
+var map = new mapboxgl .Map(
+    {
+        container: "map",
+        style: "mapbox://styles/mapbox/streets-v11",
+        center: [-98.4870, 29.4284],
+        zoom: 10
+    }
+)
