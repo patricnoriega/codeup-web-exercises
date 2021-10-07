@@ -82,7 +82,7 @@ var restaurants = [
     },
 ]
 restaurants.forEach(function (restaurant,index) {
-    console.log("restaurant # " + (index + 1));
+    console.log("restaurant #" + (index +1));
     console.log("name: " + restaurant.name);
     console.log("location: " + restaurant.location);
     console.log("-------");
