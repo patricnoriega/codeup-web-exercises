@@ -97,8 +97,8 @@ logNum(10);
 // fizzBuzz(100);
 
 
-function convertDateTime(num){
-    var dtMilliseconds = num * 1000
+function convertDateTime(dt){
+    var dtMilliseconds = dt * 1000
     var dateObject =  new Date(dtMilliseconds)
     return dateObject.toLocaleString()
 }
