@@ -95,3 +95,10 @@ logNum(10);
 //     }
 // }
 // fizzBuzz(100);
+
+
+function convertDateTime(num){
+    var milliseconds = num * 1000
+    var dateObject =  new Date(milliseconds)
+    return dateObject.toLocaleString()
+}
