@@ -98,7 +98,7 @@ logNum(10);
 
 
 function convertDateTime(num){
-    var milliseconds = num * 1000
-    var dateObject =  new Date(milliseconds)
+    var dtMilliseconds = num * 1000
+    var dateObject =  new Date(dtMilliseconds)
     return dateObject.toLocaleString()
 }
