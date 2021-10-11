@@ -31,14 +31,14 @@ $.get("https://api.openweathermap.org/data/2.5/onecall", {
     console.log(data.daily[0].weather[0].description)
     console.log(data.daily[0].temp.day)
     for (var i = 0; i <= 4; i++) {
-        var html = "<div class=\"card card-body text-center\" style=\" width: 18rem; margin: 1em\">" +
+        var html = "<div class=\"d-flex mx-auto card card-body text-center\" style=\" width: 18rem; margin: 1em\">" +
             // '<div>' + reverseGeocode(data.lat.lon) + '</div>'+
-            '<div>' + convertDateTime(data.daily[i].dt) + '</div>' +
-            '<div>' + data.daily[i].temp.day + '</div>' +
-            '<div>' + data.daily[i].temp.min + '</div>' +
-            '<div>' + data.daily[i].temp.max + '</div>' +
-            '<div>' + data.daily[i].temp.night + '</div>' +
-            '<div>' + data.daily[i].weather[0].description + '</div>' +
+            '<h6>Date:' + convertDateTime(data.daily[i].dt) + '</h6>' +
+            '<div>Today: ' + data.daily[i].temp.day + '</div>' +
+            '<div>L: ' + data.daily[i].temp.min + '</div>' +
+            '<div>H: ' + data.daily[i].temp.max + '</div>' +
+            '<div>Tonight: ' + data.daily[i].temp.night + '</div>' +
+            '<div>Conditions: ' + data.daily[i].weather[0].description + '</div>' +
 
             '</div>'
         $('#five-day').append(html)
@@ -84,7 +84,7 @@ $("#searchBtn").on("click", function (event) {
             //clear old weather
             $("#five-day").html('')
             for (var i = 0; i <= 4; i++) {
-                var html = "<div class=\"card card-body text-center\" style=\" width: 18rem; margin: 1em\">" +
+                var html = "<div class=\" card card-body text-center\" style=\" width: 18rem; margin: 1em\">" +
                     // '<div>' + reverseGeocode(data.lat.lon) + '</div>'+
                     '<div>' + convertDateTime(data.daily[i].dt) + '</div>' +
                     '<div>' + data.daily[i].temp.day + '</div>' +
