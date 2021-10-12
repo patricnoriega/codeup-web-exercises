@@ -18,7 +18,46 @@
 //         '</div>'
 //     $('#current-conditions').append(html)
 // });
-
+// $.get("https://api.openweathermap.org/data/2.5/onecall", {
+//     APPID: openWeatherKey,
+//     lat: 29.423017,
+//     lon: -98.48527,
+//     units: "imperial"
+// }).done(function (data) {
+//     console.log(data)
+//     let weatherForecast = ''
+//     const renderForecast = function (data) {
+//         console.log(data)
+//         if (weatherForecast === '') {
+//             for (let i = 0; i < data.daily.length; i++) {
+//                 weatherForecast += `<div class="col card text-center"><img src="http://openweathermap.org/img/w/${data.daily[i].weather[0].icon}.png" alt="weatherIMG"><p>${data.daily[i].weather[0].description}</p>
+//                     <p>Humidity: ${data.daily[i].humidity}%</p>
+//                     <p>Wind Speed: ${data.daily[i].wind_speed} MPH</p>
+//                     <p>Temp: ${data.daily[i].temp.day}°</p>
+//                     <p>Low: ${data.daily[i].temp.min}°</p>
+//                     <p>High: ${data.daily[i].temp.max}°</p></div>`
+//             }
+//             $('#five-day').append(weatherForecast)
+//         } else {
+//             $('#five-day').replaceWith('<div class="col card text-center" id="forecastDays"></div>')
+//             weatherForecast = ''
+//             for (let j = 0; j < data.daily.length; j++) {
+//                 weatherForecast += `
+//                     <div class="card">
+//                         <img src="http://openweathermap.org/img/w/${data.daily[j].weather[0].icon}.png" alt="weatherIMG">
+//                         <p>${data.daily[j].weather[0].description}</p>
+//                            '<h6>Date:' + convertDateTime(data.daily[i].dt) + '</h6>'
+// //             '<div>Today: ' + data.daily[i].temp.day + '</div>'
+//                         <p>Temp: ${data.daily[j].temp.day}°</p>
+//                         <p>Low: ${data.daily[j].temp.min}°</p>
+//                         <p>High: ${data.daily[j].temp.max}°</p>
+//                     </div>`
+//             }
+//             $('#five-day').append(weatherForecast)
+//
+//         }
+//     }
+// })
 $.get("https://api.openweathermap.org/data/2.5/onecall", {
     APPID: openWeatherKey,
     lat: 29.423017,
@@ -35,7 +74,7 @@ $.get("https://api.openweathermap.org/data/2.5/onecall", {
             // '<div>' + reverseGeocode(data.lat.lon) + '</div>'+
             '<h6>Date:' + convertDateTime(data.daily[i].dt) + '</h6>' +
             '<div>Today: ' + data.daily[i].temp.day + '</div>' +
-            '<div>' + data.daily[i].weather[0].icon + '</div>' +
+            '<div>' +    '<img src="http://openweathermap.org/img/wn/' + data.daily[i].weather[0].icon + '.png">' + '</img>'  + '</div>' +
             '<div>L: ' + data.daily[i].temp.min + '</div>' +
             '<div>H: ' + data.daily[i].temp.max + '</div>' +
             '<div>Tonight: ' + data.daily[i].temp.night + '</div>' +
@@ -44,7 +83,7 @@ $.get("https://api.openweathermap.org/data/2.5/onecall", {
             '</div>'
         $('#five-day').append(html)
     }
-});
+})
 
 mapboxgl.accessToken = mapBoxKey;
 console.log(mapBoxKey);
@@ -89,7 +128,7 @@ $("#searchBtn").on("click", function (event) {
                     // '<div>' + reverseGeocode(data.lat.lon) + '</div>'+
                     '<h6>Date:' + convertDateTime(data.daily[i].dt) + '</h6>' +
                     '<div>Today: ' + data.daily[i].temp.day + '</div>' +
-                    '<div>' + data.daily[i].weather[0].icon + '</div>' +
+                    '<div>' +    '<img src="http://openweathermap.org/img/wn/' + data.daily[i].weather[0].icon + '.png">' + '</img>'  + '</div>' +
                     '<div>L: ' + data.daily[i].temp.min + '</div>' +
                     '<div>H: ' + data.daily[i].temp.max + '</div>' +
                     '<div>Tonight: ' + data.daily[i].temp.night + '</div>' +
