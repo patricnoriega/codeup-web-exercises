@@ -55,6 +55,7 @@ var map = new mapboxgl.Map(
         zoom: 10
     }
 )
+map.addControl(new mapboxgl.NavigationControl());
 
 function convertDateTime(dt) {
     var dtMilliseconds = dt * 1000
