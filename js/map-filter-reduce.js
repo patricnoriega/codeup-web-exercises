@@ -63,6 +63,14 @@ console.log(avg);
 
 //5. Use .reduce to get the longest email from the list of users.
 
+let longestEmail = users.reduce(function (total, characterLength){
+return characterLength.email.length
+}, 0)
+console.log(longestEmail);
 
 //6. Use .reduce to get the list of user's names in a single string. Example: Your instructors are: ryan, luis, zach, fernando, justin.
 
+let singleStringNames = users.reduce(function(result,name){
+    return result + name.name + ', '
+}, 'Your instructors are:')
+console.log(singleStringNames);
