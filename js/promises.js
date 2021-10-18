@@ -6,5 +6,7 @@ console.log(gitHubApiPromise)
 fetch('https://api.github.com/users/patricnoriega/events', {headers: {'Authorization': gitHubApiKey}})
     .then(function (results) {
         console.log(results);
-        results.json().then((resultsObj) => console.log(resultsObj));
-    }).then()
+        return results.json()
+        }).then((resultsObj) => console.log(resultsObj[0].created_at))
+
+
